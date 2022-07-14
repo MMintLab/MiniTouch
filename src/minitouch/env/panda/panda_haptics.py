@@ -45,7 +45,7 @@ class PandaHaptics(PandaEnv):
             high=np.array([self.max_force] * 6)
         )
 
-        self.observation_space = spaces.Tuple((self.visual_observation_space, self.vector_observation_space))
+        self.observation_space = spaces.Tuple((self.visual_observation_space, self.vector_observation_space, self.haptics_space))
 
         # Amplitude of each action
         self.delta_step_joint = delta_step_joint

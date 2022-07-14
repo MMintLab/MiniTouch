@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: minitouch
+Version: 0.0.1
+Summary: MiniTouch benchmark
+Home-page: UNKNOWN
+License: UNKNOWN
+Project-URL: Source, https://github.com/ServiceNow/MiniTouch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: NOTICE
+
+UNKNOWN
+
