@@ -132,7 +132,7 @@ class PandaHaptics(PandaEnv):
                + self.get_end_effector_pos()
 
     def get_state(self):
-        return self.get_all_sides_image(self.width_camera, self.height_camera), self.get_vector_state()
+        return self.get_all_sides_image(self.width_camera, self.height_camera), self.get_vector_state(), self._get_haptics()
 
     def get_all_sides_image(self, width, height):
 

@@ -15,7 +15,7 @@ class VideoWrapper(gym.Wrapper):
     def reset(self, **kwargs):
         self.episode_states[0].clear()
         state = self.env.reset()
-        state_visual, state_vector = state
+        state_visual, state_vector, _ = state
         for i in range(self.nb_observation):
             # import pdb; pdb.set_trace()
             # import pdb; pdb.set_trace()
@@ -26,7 +26,7 @@ class VideoWrapper(gym.Wrapper):
 
     def step(self, action):
         state, reward, done, info = self.env.step(action)
-        state_visual, state_vector = state
+        state_visual, state_vector, _ = state
         for i in range(self.nb_observation):
             # self.episode_states[i].append(state_visual[np.newaxis, i, :, :])
             # import pdb;pdb.set_trace()
